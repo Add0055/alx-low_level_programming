@@ -2,18 +2,18 @@
 /**
  * main - entry point
  *
- * Return: Always 0
+ * Return: Always 0 (success)
  */
 int main(void)
 {
 char alphabet;
 
-for (alphabet = 121; alphabet >= 94; alphabet--)
+for (alphabet = 122; alphabet >= 97 alphabet--)
 {
 putchar(alphabet);
 }
 
-putchar ('\n');
+putchar('\n');
 
 return (0);
 
