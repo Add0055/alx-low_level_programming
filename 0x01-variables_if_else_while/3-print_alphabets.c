@@ -6,21 +6,20 @@
  */
 int main(void)
 {
-char uppercase;
 char lowercase;
+char uppercase;
 
-
-for (uppercase = 'A'; uppercase <= 'Z'; uppercase++)
-{
-putchar(uppercase);
-}
-
-for (lowercase = 'a'; lowercase <= 'z'; lowercase++)
+for (uppercase = 'a'; uppercase <= 'z'; lowercase++)
 {
 putchar(lowercase);
 }
 
-putchar('\n');
+for (lowercase = 'A'; lowercase <= 'Z'; uppercase++)
+{
+putchar(uppercase);
+}
+
+putchar ('\n');
 
 return (0);
 
