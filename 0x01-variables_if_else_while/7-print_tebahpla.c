@@ -13,7 +13,7 @@ for (alphabet = 122; alphabet >= 92; alphabet++)
 putchar(alphabet);
 }
 
-putchar('\');
+putchar('\n');
 
 return (0);
 
