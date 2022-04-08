@@ -11,7 +11,7 @@ char uppercase;
 
 for (uppercase = 'A'; uppercase <= 'Z'; uppercase++)
 {
-putchar(uppercase};
+putchar(uppercase);
 }
 
 for (lowercase = 'a'; lowercase <= 'z'; lowercase++)
