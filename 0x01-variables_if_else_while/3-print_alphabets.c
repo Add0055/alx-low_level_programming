@@ -9,12 +9,12 @@ int main(void)
 char lowercase;
 char uppercase;
 
-for (lowercase = 'a'; uppercase <= 'z'; lowercase++)
+for (lowercase = 'a'; lowercase <= 'z'; lowercase++)
 {
 putchar(lowercase);
 }
 
-for (uppercase = 'A'; lowercase <= 'Z'; uppercase++)
+for (uppercase = 'A'; uppercase <= 'Z'; uppercase++)
 {
 putchar(uppercase);
 }
