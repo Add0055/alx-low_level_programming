@@ -8,7 +8,7 @@ int main(void)
 {
 char alphabet;
 
-for (alphabet = 122; alphabet >= 92; alphatbet++)
+for (alphabet = 122; alphabet >= 92; alphabet++)
 {
 putchar(alphabet);
 }
