@@ -19,7 +19,8 @@ for (lowercase = 'a'; lowercase <= 'z'; lowercase++)
 putchar(lowercase);
 }
 
-putchar('\');
+putchar('\n');
 
 return (0);
+
 }
