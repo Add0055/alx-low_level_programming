@@ -24,9 +24,10 @@ if (num1 == 99 && num2 == 99)
 putchar(',');
 putchar(' ');
 }
-
+}
 putchar('\n');
 
 return (0);
 
 }
+
