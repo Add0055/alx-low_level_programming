@@ -12,7 +12,7 @@ i = 0;
 while (i < 10)
 {
 
-for (n='a'; n <= 'z'; n++)
+for (n ='a'; n <= 'z'; n++)
 {
 _putchar(n);
 }
