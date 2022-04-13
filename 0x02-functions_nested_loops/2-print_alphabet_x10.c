@@ -4,7 +4,7 @@
  *
  * Retur: x10 a-z
  */
-void print_alphabet_x10(void);
+void print_alphabet_x10(void)
 {
 int n, i;
 i=0;
