@@ -1,7 +1,7 @@
 #include "main.h"
 /**
- * print_last_digit: prints the last digit of a number.
- * @n: the number is quetion.
+ * print_last_digit - prints the last digit of a number.
+ * @n: The number is quetsion.
  *
  * Return: value of the last digit.
  */
