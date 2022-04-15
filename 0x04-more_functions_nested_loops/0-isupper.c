@@ -2,7 +2,7 @@
 /**
  * -isupper - evalu if latter is uppercase.
  *  @c: print int
- *  Return: Always 0
+ *  Return: Always 0.
  */
 
 int _isupper(int c)
@@ -16,5 +16,4 @@ else
 {
 return (0);
 }
-
 }
