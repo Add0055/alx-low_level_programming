@@ -1,5 +1,5 @@
 #include "main.h"
-
+#include <stdio.h>
 /**
  *puts_half - print every other charcter of a string
  *@str: A pointer to an int that will be changed
