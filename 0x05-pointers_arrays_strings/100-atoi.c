@@ -1,4 +1,5 @@
 #include "main.h"
+
 /**
  * is_numerical - check if it is a digit
  * @n: number
@@ -14,7 +15,6 @@ return (n >= '0' && n <= '9');
  * @s: string
  * Return: Return teh num
  */
-
 int _atoi(char *s)
 {
 unsigned int number, i;
@@ -38,6 +38,7 @@ sign *= -1;
 }
 
 }
+
 return (number * sign);
 
 }
