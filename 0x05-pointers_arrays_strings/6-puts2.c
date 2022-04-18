@@ -1,9 +1,9 @@
 #include "main.h"
 /**
- * -puts2 - prints every charcter of a string
- *  @str: A pointerto an int that will be changed
+ *puts2 - prints every charcter of a string
+ *@str: A pointerto an int that will be changed
  *
- *  Return: void which means it is correct
+ *Return: void which means it is correct
  */
 
 void puts2(char *str)
