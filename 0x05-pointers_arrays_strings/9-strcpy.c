@@ -1,9 +1,9 @@
-#include "main.h"
+#include "main.ih"
 /**
- * -strcpy - copies the string pointed to by src
- *  @dest: A pointer to a char that will be changed
- *  @src: A pointer to a char that will be changed
- *  Return: dest
+ *-strcpy - copies the string pointed to by src
+ *@dest: A pointer to a char that will be changed
+ *@src: A pointer to a char that will be changed
+ *Return: dest
  */
 
 char *_strcpy(char *dest, char *src)
