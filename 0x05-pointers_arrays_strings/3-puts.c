@@ -18,6 +18,6 @@ for (m = 0; c[m]; m++)
 {
 _putchar(c[m]);
 }
-_putchar('\n')
+_putchar('\n');
 }
 
