@@ -1,29 +1,39 @@
-#include "main.h"
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+#include <math.h>
 
 /**
- * _atoi - convert a string into an integer.
+ * main - print password.
  *
- * @s: the string to use.
- *
- * Return: integer.
+ * Return: 0.
  */
 
-int _atoi(char *s)
+int main(void)
 {
-	int sign = 1, i = 0;
-	unsigned int res = 0;
+	int ascii = 2772, i = 0, j, random;
+	char password[100];
+	time_t t;
 
-	while (!(s[i] <= '9' && s[i] >= '0') && s[i] != '\0')
+	srand((int) time(&t));
+	while (ascii > 126)
 	{
-		if (s[i] == '-')
-			sign *= -1;
+		random = rand() % 126;
+		password[i] = random;
+		ascii -= random;
 		i++;
 	}
-	while (s[i] <= '9' && (s[i] >= '0' && s[i] != '\0'))
+	if (ascii > 0)
+		password[i] = ascii;
+	else
 	{
-		res = (res * 10) + (s[i] - '0');
-		i++;
+		i--;
 	}
-	res *= sign;
-	return (res);
+	
+
+	for (j = 0; j <= i; j++)
+	{
+		printf("%c", password[j]);
+	}
+	return (0);
 }
