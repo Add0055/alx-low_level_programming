@@ -1,20 +1,11 @@
 #include "main.h"
+
 /**
- * -isdigit: checks if the no is between 0 to 9.
- * @c: input no
- * Return: 1 if is a number (0 to 9), 0 in other case
+ * _isdigit - checks for a digit (0 through 9)
+ * @num: int to be checked
+ * Return: 1 if num is a digit, 0 otherwise
  */
-
-int _isdigit(int c)
+int _isdigit(int num)
 {
-if (c >= 48 && c <= 58)
-{
-return (1);
+	return (num >= '0' && num <= '9');
 }
-else
-{
-return (0);
-}
-_putchar('\n');
-}
-
