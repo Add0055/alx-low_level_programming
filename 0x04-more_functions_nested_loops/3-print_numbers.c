@@ -1,21 +1,23 @@
 #include "main.h"
 
 /**
- * print_numbers - print the number zero to nine
+ * print_numbers - Prints the number zero to nine
  *
- * Return: Always 0 (success)
+ * Return: Always 0 (Success)
  */
 
 void print_numbers(void)
 {
 
-int i;
+	int i;
 
-i = 0;
+	i = 0;
 
-for (i = 0; i < 10; i++)
+	for (i = 0; i < 10; i++)
 
-_putchar(i + '0');
+		_putchar(i + '0');
 
-_putchar('\n');
+	_putchar ('\n');
 }
+© 2022 GitHub, Inc.
+Term
