@@ -1,40 +1,43 @@
-#include "main.h"
+#include "holberton.h"
 
 /**
- *cap_string - capitalizes all words of a string.
- *@s: string to use.
- *
- *Return: string.
- */
+ * *cap_string - capitalize words
+ * @str: pointer
+ * Return: capitalzied string
+*/
 
-char *cap_string(char *s)
+char *cap_string(char *str)
 {
-	int i = 1, j, check;
-char a[] = {',', ';', '.', '!', '?', '"', '(', ')', '{', '}', '\n', '\t', ' '};
+char sep[] = ",\t;\n; .!?\"(){}";
+int flag, i, ii;
 
-	if (s[0] > 96 && s[0] < 123)
-		s[0] -= 32;
+for (i = 0; str[i] != '\0'; i++)
+{
+	flag = 0;
 
-	while (s[i] != '\0')
+	if (i == 0)
 	{
-		if (s[i] > 96 && s[i] < 123)
+		flag = 1;
+	}
+	else
+	{
+		for (ii = 0; sep[ii] != '\0'; ii++)
 		{
-			j = 0;
-			check = 0;
-			while (check == 0 && j < 13)
+			if (str[i - 1] == sep[ii])
 			{
-				if (s[i - 1] == a[j])
-				{
-					check = 1;
-				}
-				j++;
-			}
-			if (check == 1)
-			{
-				s[i] -= 32;
+				flag = 1;
+				break;
 			}
 		}
-		i++;
 	}
-return (s);
+
+	if (flag == 1)
+	{
+		if (str[i] <= 'z' && str[i] >= 'a')
+		{
+			str[i] -= ('a' - 'A');
+		}
+	}
+}
+return (str);
 }
