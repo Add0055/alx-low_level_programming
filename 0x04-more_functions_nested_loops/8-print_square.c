@@ -1,29 +1,32 @@
-#include "main.h"
+#include "holberton.h"
 
 /**
- * print_square - prints hashtags to make a square
- * @size: limit
+ * print_square - Prints n square according n number of times
+ *
+ * @size: The number of squares/number of times
  *
  * Return: void
  */
 
 void print_square(int size)
 {
-	int i, j;
+	int a, b;
 
-	if (size > 0)
-	{
-		for (i = 0; i < size; i++)
-		{
-			for (j = 0; j < size; j++)
-			{
-				_putchar('#');
-			}
-			_putchar('\n');
-		}
-	}
-	else
+	if (size <= 0)
 	{
 		_putchar('\n');
 	}
+	else
+	{
+		for (a = 0; a < size; a++)
+		{
+			for (b = 0; b < size; b++)
+			{
+				_putchar(35);
+			}
+
+			_putchar('\n');
+		}
+	}
+
 }
